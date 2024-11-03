@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta name="og:title" content="Cozmos & Co." />
+    <meta name="og:url" content="https://cozmos.com.np" />
+    <meta name="og:description" content="" />
+    <meta name="og:image" content="./img/logo.jpg" />
+    <meta name="og:image:alt" content="Cozmos & Co. Logo" />
+    <meta name="og:image:type" content="image/jpeg" />
+
+    <!-- Title -->
+    <title>Cozmos & Co.</title>
+
+    <!-- CSS and LOGO -->
+    <link rel="icon" href="./img/logo.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://cozmos.com.np/" />
+
+    <!-- GPT Css -->
+    <style>
+      /* Swiper Container */
+      .swiper {
+        width: 100%; /* Full width for the Swiper container */
+        height: auto; /* Adjust height as needed */
+      }
+
+      /* Swiper Slide */
+      .swiper-slide {
+        display: flex; /* Center the content */
+        justify-content: center; /* Center the image horizontally */
+        align-items: center; /* Center the image vertically */
+      }
+
+      .swiper-slide img {
+        width: 100%; /* Full width for the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the slide without distortion */
+      }
+
+      .arrivals-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+        gap: 20px; /* Space between grid items */
+        padding: 20px; /* Padding around the grid */
+      }
+
+      .arrivals-grid .arrival-item {
+        width: 100%; /* Ensure full width for grid items */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+        padding: 10px; /* Inner padding for each item */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 1200px) {
+        .arrivals-grid {
+          grid-template-columns: repeat(
+            3,
+            1fr
+          ); /* 3 columns on medium screens */
+        }
+      }
+
+      @media (max-width: 900px) {
+        .arrivals-grid {
+          grid-template-columns: repeat(
+            2,
+            1fr
+          ); /* 2 columns on smaller screens */
+        }
+      }
+
+      @media (max-width: 600px) {
+        .arrivals-grid {
+          grid-template-columns: 1fr; /* 1 column on mobile screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg sticky-top shadow"
+      aria-label="Main navigation"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./img/navlogo.png"
+            alt="Company Logo"
+            width="285"
+            height="65"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyus">Why Us?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#store">Our Store</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./img/y1.png"
+              alt="a guy wearing products from Cozmos"
+              class="swiper-img  s1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/y2.png"
+              alt="a guy wearing products from Cozmos"
+              class="swiper-img s2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/y3.png"
+              alt="a guy wearing products from Cozmos"
+              class="swiper-img  s3"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/y4.png"
+              alt="a guy wearing products from Cozmos"
+              class="swiper-img  s4"
+            />
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <!-- Swiper End -->
+    </main>
+
+    <!-- New Arrivals Start -->
+    <div class="arrivals">
+      <h2 class="arrivals-title">Special Offers</h2>
+      <div class="arrivals-grid">
+        <div class="shadow">
+          <img src="./img/products/1.png" alt="product-image" />
+          <p class="product-title text-center fs-2">Blue Pant</p>
+          <div class="d-grid">
+            <p
+              class="product-price fs-5 text-center text-decoration-line-through ps-5 d-block pb-2"
+            >
+              Rs.5000
+            </p>
+            <p class="product-price fs-5 text-center ps-5 d-block pb-2">
+              Rs.1000
+            </p>
+          </div>
+        </div>
+        <div class="shadow">
+          <img src="./img/products/1.png" alt="product-image" />
+          <p class="product-title text-center fs-2">Blue Pant</p>
+          <div class="d-grid">
+            <p
+              class="product-price fs-5 text-center text-decoration-line-through ps-5 d-block pb-2"
+            >
+              Rs.5000
+            </p>
+            <p class="product-price fs-5 text-center ps-5 d-block pb-2">
+              Rs.1000
+            </p>
+          </div>
+        </div>
+        <div class="shadow">
+          <img src="./img/products/1.png" alt="product-image" />
+          <p class="product-title text-center fs-2">Blue Pant</p>
+          <div class="d-grid">
+            <p
+              class="product-price fs-5 text-center text-decoration-line-through ps-5 d-block pb-2"
+            >
+              Rs.5000
+            </p>
+            <p class="product-price fs-5 text-center ps-5 d-block pb-2">
+              Rs.1000
+            </p>
+          </div>
+        </div>
+        <div class="shadow">
+          <img src="./img/products/1.png" alt="product-image" />
+          <p class="product-title text-center fs-2">Blue Pant</p>
+          <div class="d-grid">
+            <p
+              class="product-price fs-5 text-center text-decoration-line-through ps-5 d-block pb-2"
+            >
+              Rs.5000
+            </p>
+            <p class="product-price fs-5 text-center ps-5 d-block pb-2">
+              Rs.1000
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <!-- New Arrivals End -->
+    <!-- Why Us? Start -->
+    <div class="whyus" id="whyus">
+      <h1 class="title text-center">Why Us?</h1>
+      <div>
+        <div class="whyuschild shadow">
+          <img
+            src="./img/affordability.png"
+            alt="Our Products are Cost Effective / Affordable"
+          />
+          <p class="fs-1 text-center fw-semibold">Cost Effective</p>
+          <br />
+        </div>
+        <div class="whyuschild shadow">
+          <img
+            src="./img/from nepal.png"
+            alt="Our Products are Crafted in Nepal / Made in Nepal"
+          />
+          <p class="fs-1 text-center fw-semibold">Crafted in Nepal</p>
+          <br />
+        </div>
+        <div class="whyuschild shadow mt-5">
+          <img
+            src="./img/crown.png"
+            alt="Our Products are of Extraordinary Level of Premium Quality"
+          />
+          <p class="fs-1 text-center fw-semibold">Premium Quality</p>
+          <br />
+        </div>
+        <div class="whyuschild shadow mt-5">
+          <img
+            src="./img/delivery.png"
+            alt="Our Products will reach your home at blazing speeds."
+          />
+          <p class="fs-1 text-center fw-semibold">Rapid Dispatch</p>
+          <br />
+        </div>
+      </div>
+      <a href="" style="text-decoration: none;">
+        <button class="rounded-pill fs-3">Our Products</button>
+      </a>
+    </div>
+    <!-- Why Us? End -->
+    <!-- Reviews Start  -->
+    <!-- Reviews End -->
+    <!-- Store Start -->
+    <div class="store" id="store">
+      <h1>Our Store</h1>
+      <div class="store-div">
+        <div class="img">
+          <img src="./img/STORE.png" alt="cozmos store" />
+        </div>
+        <div class="txt">
+          <div id="first">
+            <img src="./img/location.png" alt="our location" />
+            <p class="fs-3">Kalopul, Rudramati Marg, Near Best Venue Banquet</p>
+          </div>
+          <br />
+          <div>
+            <img src="./img/timing.png" alt="" />
+            <p class="fs-3">10 AM - 8 PM</p>
+          </div>
+          <br />
+          <div>
+            <img src="./img/days.png" alt="" />
+            <p class="fs-3">Open Everyday</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <!-- Store End -->
+    <!-- Our Team start -->
+    <div class="team" id="team">
+      <h1>Our Team</h1>
+      <a href="" class="team-link" target="_blank">
+        <section>
+          <img src="./img/team/ceo.jpg" alt="CEO" />
+          <p class="team-txt fs-1">Suresh Chhetri</p>
+          <p class="team-txt-desc fs-3">CEO</p>
+        </section>
+      </a>
+      <div class="team-div">
+        <div class="team-div-child-1">
+          <a href="" class="team-link" target="_blank">
+            <div>
+              <img src="./img/team/seniordesigner.jpg" alt="Senior Designer" />
+              <p class="team-txt fs-1">Senior Designer</p>
+              <p class="team-txt-desc fs-3">Senior Designer</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/divya-d-sharma-211b39232/"
+            class="team-link"
+            target="_blank"
+          >
+            <div>
+              <img src="./img/team/dev.png" alt="Front-End Dev" />
+              <p class="team-txt fs-1">Divya D. Sharma</p>
+              <p class="team-txt-desc fs-3">Front-End Dev</p>
+            </div>
+          </a>
+          <a href="" class="team-link" target="_blank">
+            <div>
+              <img src="./img/team/juniordesigner.jpg" alt="Junior Designer" />
+              <p class="team-txt fs-1">Junior Designer</p>
+              <p class="team-txt-desc fs-3">Junior Designer</p>
+            </div>
+          </a>
+        </div>
+        <div class="team-div-child-2">
+          <a href="" class="team-link" target="_blank">
+            <div>
+              <img
+                src="./img/team/salesrepresentative1.jpg"
+                alt="Sales Representative"
+              />
+              <p class="team-txt fs-1">Sales Representative</p>
+              <p class="team-txt-desc fs-3">Sales Representative</p>
+            </div>
+          </a>
+          <a href="" class="team-link" target="_blank">
+            <div>
+              <img src="./img/team/sales.jpg" alt="Sales Manager" />
+              <p class="team-txt fs-1">Sales Manager</p>
+              <p class="team-txt-desc fs-3">Sales Manager</p>
+            </div>
+          </a>
+          <a href="" class="team-link" target="_blank">
+            <div>
+              <img
+                src="./img/team/salesrepresentative2.jpg"
+                alt="Sales Representative"
+              />
+              <p class="team-txt fs-1">Sales Representative</p>
+              <p class="team-txt-desc fs-3">Sales Representative</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team End -->
+    <!-- Contact Us Start -->
+    <div class="contact" id="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-parent">
+        <div class="contact-div-child-1">
+          <div class="contact-div-child-left-1">
+            <img src="./img/telephone.png" alt="telephone" />
+            <p class="contact-text fs-3">+977-98xxxxxxxx</p>
+          </div>
+          <div class="contact-div-child-left-2">
+            <img src="./img/mail.png" alt="E-mail" />
+            <p class="contact-text fs-3">support@cozmos.com</p>
+          </div>
+        </div>
+        <div class="contact-div-child-2">
+          <div class="contact-div-child-right-1">
+            <a href="#" target="_blank" style="text-decoration: none">
+              <img src="./img/fb.png" alt="facebook" />
+              <p class="contact-text fs-3">@cozmos</p>
+            </a>
+          </div>
+          <div class="contact-div-child-right-2">
+            <a href="#" target="_blank" style="text-decoration: none">
+              <img src="./img/insta.png" alt="instagram" />
+              <p class="contact-text fs-3">@cozmos</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Us End -->
+    <!-- About Us Start -->
+    <div class="about">
+      <p class="fs-3 text-center">Copyright © | 2024 Cozmos & Co.</p>
+    </div>
+    <!-- About Us End -->
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper1 = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        effect: "fade",
+        centeredSlides: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+  <!-- Local JS -->
+  <script src="./script/script.js"></script>
+</html>

@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --primary-yellow: #fff16c;
+  --primary-green: #0c6031;
+  --primary-block: #ffffff;
+  --secondary-text: #ff6f61;
+  --primary-blue: #4379F2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-yellow) !important;
+  position: relative;
+}
+
+.navbar {
+  background-color: var(--primary-yellow) !important;
+  height: 70px;
+  /* filter: drop-shadow(0px, 4px, 30px, #000) !important; */
+}
+
+.img-nav {
+  width: 80%;
+  margin-left: 25%;
+}
+
+.nav-link-last {
+  margin-right: 25%;
+}
+
+.nav-ul {
+  width: 65%;
+  justify-content: flex-end;
+  margin-left: 25%;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: var(--primary-green) !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  height: 70px;
+  background-color: #fff16c;
+}
+
+.navbar-brand {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.navbar-nav {
+  margin-right: 25px;
+}
+
+.nav-link {
+  color: #0c6031 !important;
+  transition: color 0.3s ease;
+  font-size: 35px;
+}
+
+.nav-link:hover {
+  color: #083e20 !important;
+}
+
+.navbar-toggler {
+  border-color: #0c6031;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(12, 96, 49, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .navbar-collapse {
+    background-color: #fff16c;
+    padding: 1rem;
+  }
+}
+
+.form-control:focus {
+  border-color: #0c6031;
+  box-shadow: 0 0 0 0.2rem rgba(12, 96, 49, 0.25);
+}
+
+.btn-outline-success {
+  color: #0c6031;
+  border-color: #0c6031;
+}
+
+.btn-outline-success:hover {
+  color: var(--primary-block);
+  background-color: #0c6031;
+  border-color: #0c6031;
+}
+
+/* Mobile View Start */
+@media (max-width: 768px){
+  .navbar-brand img{
+    width: 70%;
+    height: auto;
+  }
+
+  .navbar-brand{
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 400px){
+  .navbar-brand{
+    width: 70%;
+  }
+}
+/*  Mobile View End */
+
+/* Navbar End */
+
+/* Main Start */
+
+/* Swiper Start */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-img {
+  width: 100%;
+}
+/* Swiper End */
+
+/* New Arrivals Start */
+.arrivals{
+  background-color: var(--primary-block);
+}
+
+.arrivals-title{
+  padding-top: 35px;
+  color: var(--secondary-text);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 45px;
+  text-decoration: underline dashed var(--secondary-text);
+  text-align: center !important;
+}
+
+.arrivals-grid{
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.arrivals-grid div{
+  border-radius: 18px;
+  display: block;
+}
+
+.arrivals-grid div p{
+  margin: 0 !important;
+}
+
+.product-title{
+  font-family: "Comic Neue", cursive;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+
+.product-price{
+  color: var(--secondary-text);
+}
+
+.d-grid{
+  grid-template-columns: 40% 40%;
+}
+
+.arrivals-grid div img{
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Mobile View Start */
+@media (max-width: 450px){
+  .arrivals-grid{
+    display: block;
+  }
+  
+  .arrivals-grid div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .d-grid{
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+  }
+
+  .d-grid p{
+    padding-left: 0 !important;
+  }
+
+  .arrivals-title{
+    font-size: 40px;
+  }
+}
+/* Mobile View End */
+/* New Arrivals End */
+
+/* Why Us Start */
+.whyus {
+  margin-top: 50px;
+}
+
+.whyus .title {
+  color: var(--primary-green);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  text-decoration: underline dashed var(--primary-green);
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.whyus div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+.whyuschild {
+  background-color: var(--primary-block);
+  margin-top: 20px;
+  display: block !important;
+  border-radius: 18px;
+  margin-bottom: 0 !important;
+}
+
+.whyuschild img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.whyuschild p {
+  color: var(--secondary-text);
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+.whyus button {
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 0;
+  background-color: var(--primary-green);
+  color: var(--primary-yellow);
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  transition: 0.5s;
+}
+
+.whyus button:hover{
+  background-color: #4379F2;
+  color: white;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px) {
+  .whyus div {
+    display: block;
+  }
+
+  .whyuschild {
+    width: 75% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  .whyus div:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  .whyuschild p {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile View End */
+
+/* Why Us End */
+
+/* Store Start */
+.store {
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  display: block;
+}
+
+.store h1 {
+  font-size: 45px;
+  color: var(--primary-yellow);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+  text-decoration: underline dashed var(--primary-yellow);
+}
+
+.store-div {
+  display: grid;
+  grid-template-columns: 30% 35%;
+  justify-content: center;
+}
+
+.store .img{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.store .img img {
+  width: 100%;
+}
+
+.store .txt {
+  display: block !important;
+}
+
+#first {
+  margin-top: 25% !important;
+}
+
+.store .txt div img {
+  width: 64px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.store .txt div {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.store .txt div p {
+  font-family: "Comic Neue", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary-yellow);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 10px;
+  margin-bottom: 0 !important;
+}
+
+/* Mobile View Store Start */
+@media (max-width: 650px){
+  .store-div{
+    display: block;
+  }
+
+  .store-div .img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .store-div .txt{
+    margin-top: -75px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Mobile view Store End */
+
+/* Store End */
+
+/* our team start */
+.team {
+  background-color: white;
+  width: 100%;
+}
+
+.team h1 {
+  padding-top: 35px;
+  color: var(--secondary-text);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 45px;
+  text-decoration: underline dashed var(--secondary-text);
+  text-align: center !important;
+}
+
+.team section {
+  width: 100%;
+  display: block;
+}
+
+.team section img {
+  width: 250px;
+  border-radius: 50000px;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.team-txt {
+  color: var(--secondary-text);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+}
+
+.team-txt-desc {
+  color: #4aa3a3;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.team-link {
+  text-decoration: none;
+}
+
+.team-div {
+  display: block;
+}
+
+.team-div img {
+  width: 250px;
+  border-radius: 5000000px;
+}
+
+.team-div-child-1,
+.team-div-child-2 {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.team section {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.team-div-child-1 div {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.team-div-child-2 div {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.team section:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.team-div-child-1 div:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.team-div-child-2 div:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.team-div-child-1 div img,
+.team-div-child-2 div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile */
+@media only screen and (max-width: 750px) {
+  .team-div-child-1,
+  .team-div-child-2 {
+    grid-template-columns: 100%;
+  }
+
+  .team-div-child-1 div,
+  .team section,
+  .team-div-child-2 div {
+    filter: none;
+  }
+}
+/* Mobile end */
+
+/* our Team End */
+
+/* contact start */
+.contact {
+  background-color: var(--primary-yellow);
+}
+
+.contact h1 {
+  font-size: 45px;
+  color: var(--primary-green);
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+  text-decoration: underline dashed var(--primary-green);
+}
+
+.contact-parent {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.contact-div-child-2,
+.contact-div-child-1 {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-div-child-left-1,
+.contact-div-child-left-2,
+.contact-div-child-right-1 ,
+.contact-div-child-right-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contact-div-child-left-1,
+.contact-div-child-left-2,
+.contact-div-child-right-1 a,
+.contact-div-child-right-2 a{
+  display: flex;
+  align-items: center;
+}
+
+.contact-parent img{
+  width: 64px;
+}
+
+.contact-text{
+  color: var(--primary-green);
+  font-family: "Comic Neue", cursive;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 10px;
+  margin-bottom: 0 !important;
+}
+
+/* Mobile View Start */
+@media (max-width: 650px){
+  .contact-parent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-div-child-1, .contact-div-child-2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+/* mobile View End */
+
+/* contact end */
+
+/* About Start */
+.about{
+  background-color: var(--primary-green);
+  margin: 0 !important;
+}
+
+.about p{
+  margin: 0 !important;
+  color: white;
+}
+/* About End */
+
+/* ChatGPT Code */
+/* General styles */
+.container-fluid {
+  padding: 0 15px; /* Add some padding to the container */
+}
+
+/* .arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px; /* Add spacing between items 
+} */
+
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: 400px; /* Set a specific height for the swiper */
+}
+
+.swiper-img {
+  object-fit: cover; /* Ensure images cover the slide area */
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 0 10px; /* Adjust navbar padding */
+}
+
+.nav-item {
+  margin: 0 5px; /* Adjust navbar item margins */
+}
+
+/* Team Section */
+/* .team-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center team members
+} */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 5px; /* Reduce navbar padding on smaller screens */
+  }
+
+  .team-div {
+    flex-direction: column; /* Stack team members on small screens */
+    align-items: center; /* Center align team members */
+  }
+
+  /* .contact-parent {
+    flex-direction: column; 
+    align-items: center; 
+  } */
+
+  .title {
+    font-size: 1.5rem; /* Adjust title font size */
+  }
+}
+/*  ChatGPT Code End */
+
+/* Adding responsiveness manually */
+@media (max-width: 599px) {
+  .navbar-brand{
+    margin-top: 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .arrivals-grid{
+    display: block;
+  }
+
+  .contact{
+
+  }
+}
