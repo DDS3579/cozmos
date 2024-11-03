@@ -588,6 +588,21 @@ body {
   line-height: normal;
   margin-left: 10px;
   margin-bottom: 0 !important;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.contact-img{
+  transition: 0.5s;
+}
+
+.contact-text:hover{
+  color: red;
+  transform: scale(1.1);
+}
+
+.contact-img:hover{
+  transform: scale(1.1);
 }
 
 /* Mobile View Start */
