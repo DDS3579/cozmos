@@ -4,12 +4,50 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Official Website of Nepalese Clothing Brand 'Cozmos & Co.' Hope you have a great shopping experience"
+    />
+    <meta
+      name="keywords"
+      content="
+    clothing brand,
+    clothes,
+    shop,
+    nepalese brand,
+    nepal,
+    Nepalese clothing,
+    Nepali fashion,
+    traditional Nepalese attire,
+    contemporary Nepalese clothing,
+    ethnic wear Nepal,
+    handmade clothing Nepal,
+    organic cotton apparel,
+    embroidered garments,
+    sustainable fashion Nepal,
+    silk sarees,
+    pashmina shawls,
+    trekking apparel Nepal,
+    women's fashion Nepal,
+    men's clothing Nepal,
+    kids’ ethnic wear,
+    festival attire Nepal,
+    Kathmandu fashion,
+    ethical fashion,
+    fair trade clothing,
+    local craftsmanship,
+    cultural heritage fashion,
+    artisan clothing,
+    Nepal textile products,
+    modern ethnic wear,
+    unique Nepalese designs
+"
+    />
+
     <meta name="robots" content="index,follow" />
     <meta name="og:title" content="Cozmos & Co." />
-    <meta name="og:url" content="https://cozmos.com.np" />
-    <meta name="og:description" content="" />
+    <meta name="og:url" content="https://cozmos.netlify.app" />
+    <meta name="og:description" content="Official Website of Nepalese Clothing Brand 'Cozmos & Co.' Hope you have a great shopping experience" />
     <meta name="og:image" content="./img/logo.jpg" />
     <meta name="og:image:alt" content="Cozmos & Co. Logo" />
     <meta name="og:image:type" content="image/jpeg" />
@@ -155,7 +193,7 @@
             <img
               src="./img/y1.png"
               alt="a guy wearing products from Cozmos"
-              class="swiper-img  s1"
+              class="swiper-img s1"
             />
           </div>
           <div class="swiper-slide">
@@ -169,14 +207,14 @@
             <img
               src="./img/y3.png"
               alt="a guy wearing products from Cozmos"
-              class="swiper-img  s3"
+              class="swiper-img s3"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./img/y4.png"
               alt="a guy wearing products from Cozmos"
-              class="swiper-img  s4"
+              class="swiper-img s4"
             />
           </div>
         </div>
@@ -286,7 +324,7 @@
           <br />
         </div>
       </div>
-      <a href="" style="text-decoration: none;">
+      <a href="" style="text-decoration: none">
         <button class="rounded-pill fs-3">Our Products</button>
       </a>
     </div>
@@ -317,7 +355,7 @@
           </div>
         </div>
       </div>
-      <br>
+      <br />
     </div>
     <!-- Store End -->
     <!-- Our Team start -->
@@ -453,6 +491,29 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyANH5igJb3A5PCZ3L1gPM1HPSWewPnzRK4",
+        authDomain: "cozmos-ad661.firebaseapp.com",
+        projectId: "cozmos-ad661",
+        storageBucket: "cozmos-ad661.firebasestorage.app",
+        messagingSenderId: "128615353102",
+        appId: "1:128615353102:web:b91c10d33585c24656255f",
+        measurementId: "G-00DSGYBT0N",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
   </body>
   <!-- Local JS -->
