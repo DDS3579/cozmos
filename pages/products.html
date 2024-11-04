@@ -4,16 +4,56 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Official Website of Nepalese Clothing Brand 'Cozmos & Co.' Hope you have a great shopping experience"
+    />
+    <meta
+      name="keywords"
+      content="
+    clothing brand,
+    clothes,
+    shop,
+    nepalese brand,
+    nepal,
+    Nepalese clothing,
+    Nepali fashion,
+    traditional Nepalese attire,
+    contemporary Nepalese clothing,
+    ethnic wear Nepal,
+    handmade clothing Nepal,
+    organic cotton apparel,
+    embroidered garments,
+    sustainable fashion Nepal,
+    silk sarees,
+    pashmina shawls,
+    trekking apparel Nepal,
+    women's fashion Nepal,
+    men's clothing Nepal,
+    kids’ ethnic wear,
+    festival attire Nepal,
+    Kathmandu fashion,
+    ethical fashion,
+    fair trade clothing,
+    local craftsmanship,
+    cultural heritage fashion,
+    artisan clothing,
+    Nepal textile products,
+    modern ethnic wear,
+    unique Nepalese designs
+"
+    />
+
     <meta name="robots" content="index,follow" />
     <meta name="og:title" content="Cozmos & Co." />
-    <meta name="og:url" content="https://cozmos.com.np" />
-    <meta name="og:description" content="" />
+    <meta name="og:url" content="https://cozmos.netlify.app" />
+    <meta
+      name="og:description"
+      content="Official Website of Nepalese Clothing Brand 'Cozmos & Co.' Hope you have a great shopping experience"
+    />
     <meta name="og:image" content="./img/logo.jpg" />
     <meta name="og:image:alt" content="Cozmos & Co. Logo" />
     <meta name="og:image:type" content="image/jpeg" />
-
     <!-- Title -->
     <title>Our Products</title>
 
@@ -53,6 +93,30 @@
         width: 100%; /* Full width for the image */
         height: auto; /* Maintain aspect ratio */
         object-fit: cover; /* Cover the slide without distortion */
+      }
+
+      @media (max-width: 1200px) {
+        .arrivals-grid {
+          grid-template-columns: repeat(
+            3,
+            1fr
+          ); /* 3 columns on medium screens */
+        }
+      }
+
+      @media (max-width: 900px) {
+        .arrivals-grid {
+          grid-template-columns: repeat(
+            2,
+            1fr
+          ); /* 2 columns on smaller screens */
+        }
+      }
+
+      @media (max-width: 600px) {
+        .arrivals-grid {
+          grid-template-columns: 1fr; /* 1 column on mobile screens */
+        }
       }
     </style>
 
@@ -123,28 +187,28 @@
           <img
             src="../img/y1.png"
             alt="a guy wearing products from Cozmos"
-            class="swiper-img"
+            class="swiper-img s1"
           />
         </div>
         <div class="swiper-slide">
           <img
             src="../img/y2.png"
             alt="a guy wearing products from Cozmos"
-            class="swiper-img"
+            class="swiper-img s2"
           />
         </div>
         <div class="swiper-slide">
           <img
             src="../img/y3.png"
             alt="a guy wearing products from Cozmos"
-            class="swiper-img"
+            class="swiper-img s3"
           />
         </div>
         <div class="swiper-slide">
           <img
             src="../img/y4.png"
             alt="a guy wearing products from Cozmos"
-            class="swiper-img"
+            class="swiper-img s4"
           />
         </div>
       </div>
@@ -158,87 +222,241 @@
         <h2>So, What would you like to Own?</h2>
         <div class="swiper my-product-swiper" id="swiper2">
           <div class="swiper-wrapper">
-            <div class="swiper-slide product-card" style="padding: 0">
-              <a
-                href=""
-                style="
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-                  width: 100%;
-                "
-              >
-                <img src="../img/products/1.png" alt="T-Shirt 1" />
-                <p>T-Shirt</p>
-              </a>
+            <div
+              class="swiper-slide product-card"
+              style="padding: 0; cursor: pointer"
+              onclick="tshirt()"
+            >
+              <img src="../img/products/1.png" alt="T-Shirt 1" />
+              <p class="category-title">T-Shirt</p>
             </div>
 
-            <div class="swiper-slide product-card" style="padding: 0">
-              <a
-                href=""
-                style="
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-                  width: 100%;
-                "
-              >
-                <img src="../img/products/1.png" alt="T-Shirt 1" />
-                <p>Hoody</p>
-              </a>
+            <div
+              class="swiper-slide product-card"
+              style="padding: 0; cursor: pointer"
+              onclick="hoody()"
+            >
+              <img src="../img/products/1.png" alt="T-Shirt 1" />
+              <p class="category-title">Hoody</p>
             </div>
 
-            <div class="swiper-slide product-card" style="padding: 0">
-              <a
-                href=""
-                style="
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-                  width: 100%;
-                "
-              >
-                <img src="../img/products/1.png" alt="T-Shirt 1" />
-                <p>Sweatshirt</p>
-              </a>
+            <div
+              class="swiper-slide product-card"
+              style="padding: 0; cursor: pointer"
+              onclick="sweatshirt()"
+            >
+              <img src="../img/products/1.png" alt="T-Shirt 1" />
+              <p class="category-title">Sweatshirt</p>
             </div>
 
-            <div class="swiper-slide product-card" style="padding: 0">
-              <a
-                href=""
-                style="
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-                  width: 100%;
-                "
-              >
-                <img src="../img/products/1.png" alt="T-Shirt 1" />
-                <p>Cozmos Specials</p>
-              </a>
+            <div
+              class="swiper-slide product-card"
+              style="padding: 0; cursor: pointer"
+              onclick="special()"
+            >
+              <img src="../img/products/1.png" alt="T-Shirt 1" />
+              <p class="category-title">Cozmos Specials</p>
             </div>
 
-            <div class="swiper-slide product-card" style="padding: 0">
-              <a
-                href=""
-                style="
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-                  width: 100%;
-                "
-              >
-                <img src="../img/products/1.png" alt="T-Shirt 1" />
-                <p>Limited Edition</p>
-              </a>
+            <div
+              class="swiper-slide product-card"
+              style="padding: 0; cursor: pointer"
+              onclick="limited()"
+            >
+              <img src="../img/products/1.png" alt="T-Shirt 1" />
+              <p class="category-title">Limited Edition</p>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next" id="mobRem3" style="color: #0c6031;"></div>
+          <div class="swiper-button-prev" id="mobRem4"></div>
         </div>
       </div>
       <!-- Category Selector Ends -->
     </section>
+    <!-- Product Pages start -->
+    <div
+      class="product-page-parent t-shirt-div"
+      style="display: none"
+      id="t-shirt"
+    >
+      <h3>T-Shirts</h3>
+      <div class="product-page arrivals-grid">
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>T-Shirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>T-Shirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>T-Shirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>T-Shirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="product-page-parent hoody-div" style="display: none" id="hoody">
+      <h3>Hoodies</h3>
+      <div class="product-page arrivals-grid">
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Hoody 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Hoody 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Hoody 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Hoody 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="product-page-parent sweatshirt-div"
+      style="display: none"
+      id="sweatshirt"
+    >
+      <h3>Sweatshirts</h3>
+      <div class="product-page arrivals-grid">
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Sweatshirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Sweatshirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Sweatshirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Sweatshirt 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="product-page-parent special-div"
+      style="display: none"
+      id="special"
+    >
+      <h3>Specials</h3>
+      <div class="product-page arrivals-grid">
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Specials 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Specials 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Specials 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Specials 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="product-page-parent limited-div"
+      style="display: none"
+      id="limited"
+    >
+      <h3>Limited Edition</h3>
+      <div class="product-page arrivals-grid">
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Limited 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Limited 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Limited 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="#" style="text-decoration: none; color: black">
+            <img src="../img/products/1.png" alt="" />
+            <p>Limited 1</p>
+            <span class="price">Rs.10000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Product Pages End -->
+
     <br />
     <!-- Trending Section Start-->
     <section class="trending">
@@ -326,30 +544,31 @@
               </a>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next" id="mobRem1"></div>
+          <div class="swiper-button-prev" id="mobRem2"></div>
         </div>
       </div>
     </section>
     <!-- Trending Section End -->
-     <br>
-     <a href="./all.html" class="product-category" style="  text-decoration: none;"> 
-     <h2 style="text-align: center; font-size: 50px;">Looking for Something Else? View All</h2>
+    <br />
+    <a href="./all.html" class="product-category" style="text-decoration: none">
+      <h2 style="text-align: center; font-size: 2.5rem">
+        Looking for Something Else? View All
+      </h2>
     </a>
     <br />
     <!-- Footer Start -->
     <footer>
       <!-- About Us Start -->
       <div class="about">
-        <p class="fs-3 text-center">Copyright © | 2024 Cozmos & Co.</p>
+        <p class="fs-5 text-center">Copyright © | 2024 Cozmos & Co.</p>
       </div>
       <!-- About Us End -->
     </footer>
     <!-- Footer End -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script></script>
     <script src="../script/script.js"></script>
   </body>
 </html>
